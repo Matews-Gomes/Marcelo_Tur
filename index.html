@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./css/theme.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" 
+    crossorigin="anonymous">
+    <title>MarceloTur - Home</title>
+</head>
+<body>
+    <header class="menu-principal">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <main>
+                    <div class="logo-redes container-fluid">
+                        <div class="logo">
+                            <img src="./img/logo.png" alt="logo">
+                        </div>
+                        <div class="rede-sociais navbar-brand">
+                            <ul>
+                                <li><a href="#"><img src="./img/whatsapp.png"></a></li>                        
+                                <li><a href="#"><img src="./img/facebook.png"></a></li>
+                                <li><a href="#"><img src="./img/instagram.png"></a></li>
+                                <li><a href="#"><img src="./img/email.png"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </main>          
+            </div>
+        </nav>        
+    </header>
+    <header class="menu-itens">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                    <button class="navbar-toggler" type="button" 
+                        data-bs-toggle="collapse" data-bs-target="#navbarContent" 
+                        aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                <div class="collapse navbar-collapse menu" id="navbarContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a href="index.html">Home</a></li>
+                        <li class="nav-item"><a href="#">Viagens</a></li>
+                        <li class="nav-item"><a href="#">Serviços</a></li>
+                        <li class="nav-item"><a href="#">Contato</a></li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="jumbotron jumbotron-fluid pt-3 mt-3 text-center bg-light">
+        <div class="container">
+            <p class="lead fs-1">Marcelo turismo transportando com conforto e segurança.</p>
+            <hr class="my-2">
+        </div>
+    </div>
+    <div id="carouselExampleCaptions" class="carousel slide carrousel" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./img/elevador-lacerda.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5 class="fs-2">Salvador</h5>
+                    <p class="lead">Um dos principais pontos turisticos de salvador o elevador lacerda.</p>
+                    <hr class="container">
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="./img/barra-grande-bahia.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5 class="fs-2">Barra Grande</h5>
+                    <p class="lead">Localizado na peíisula de Maraú um dos lugares mais bonitos para visitar.</p>
+                    <hr class="container">
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="./img/parque-nacional-da-chapada-diamantina.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5 class="fs-2">Chapada Diamantina</h5>
+                    <p class="lead">O parque nacional da chapada exibe com exuberância suas cachoeiras fantásticas.</p>
+                    <hr class="container">
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <div class="jumbotron jumbotron-fluid pt-3 mt-3 text-center bg-light">
+        <div class="container">
+            <h1 class="display-3">Viagens e Turismo</h1>
+            <p class="lead fs-2">Conforto, segurança, e comodidade para sua viagem conte com agente.</p>
+            <hr class="my-2">
+                <div class="mapouter mapa">
+                    <div class="gmap_canvas embed-responsive embed-responsive-16by9">
+                    <iframe class="gmap_iframe embed-responsive-item" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" 
+                    src="https://maps.google.com/maps?width=1000&amp;height=400&amp;hl=en&amp;q=itabuna&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe> 
+                    <a href="https://mcpenation.com/">https://mcpenation.com</a></div>
+                    <style>.mapouter{position:relative;text-align:center;width:100%;height:400px;}.gmap_canvas {overflow:hidden;background:none!important;width:100%;height:400px;}.gmap_iframe {width:100%!important;height:400px!important;}</style>
+                </div>
+                <hr class="my-2">
+                <p class="lead fs-3">Escolha seu destino faça seu orçamento e deixe com agente.</p>
+        </div>
+        <h1 class="display-3">Serivços</h1>
+        <p class="lead">
+            Nossa frota conta com os serviços de turismo, passeios, translados,
+            empresa, conveções, tranporte de colaboradores, faça já seu orcamento!
+        </p>
+            <hr class="my-2">            
+        <p class="lead">
+            <a class="btn btn-primary btn-lg" href="Jumbo action link" role="button">Solicitar Agora!</a>
+        </p>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" 
+    crossorigin="anonymous"></script>
+</body>
+</html>
