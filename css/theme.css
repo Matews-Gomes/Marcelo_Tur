@@ -93,3 +93,7 @@ main{
     height: 400px;
     width: 20rem;
 }
+
+.container {
+    max-width: 960px;
+  }

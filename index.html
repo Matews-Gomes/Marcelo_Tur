@@ -8,6 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" 
     rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" 
     crossorigin="anonymous">
+    <link rel="stylesheet" href="/fontawesome/css/all.min.css">
     <title>MarceloTur - Home</title>
 </head>
 <body>
@@ -46,11 +47,7 @@
                         <li class="nav-item"><a href="#">Viagens</a></li>
                         <li class="nav-item"><a href="#">Serviços</a></li>
                         <li class="nav-item"><a href="#">Contato</a></li>
-                    </ul>
-                    <form class="d-flex">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Search</button>
-                    </form>
+                    </ul>                    
                 </div>
             </div>
         </nav>
@@ -63,7 +60,8 @@
     </div>
     <div id="carouselExampleCaptions" class="carousel slide carrousel" data-bs-ride="carousel">
         <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" 
+                class="active" aria-current="true" aria-label="Slide 1"></button>
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
         </div>
@@ -102,34 +100,171 @@
             <span class="visually-hidden">Next</span>
         </button>
     </div>
+
     <div class="jumbotron jumbotron-fluid pt-3 mt-3 text-center bg-light">
         <div class="container">
-            <h1 class="display-3">Viagens e Turismo</h1>
+            <h1 class="display-3">
+                <i class="fa-solid fa-van-shuttle"></i>
+                Viagens e Turismo
+            </h1>
             <p class="lead fs-2">Conforto, segurança, e comodidade para sua viagem conte com agente.</p>
             <hr class="my-2">
                 <div class="mapouter mapa">
                     <div class="gmap_canvas embed-responsive embed-responsive-16by9">
-                    <iframe class="gmap_iframe embed-responsive-item" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" 
-                    src="https://maps.google.com/maps?width=1000&amp;height=400&amp;hl=en&amp;q=itabuna&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe> 
-                    <a href="https://mcpenation.com/">https://mcpenation.com</a></div>
-                    <style>.mapouter{position:relative;text-align:center;width:100%;height:400px;}.gmap_canvas {overflow:hidden;background:none!important;width:100%;height:400px;}.gmap_iframe {width:100%!important;height:400px!important;}</style>
+                        <iframe class="gmap_iframe embed-responsive-item" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" 
+                        src="https://maps.google.com/maps?width=1000&amp;height=400&amp;hl=en&amp;q=itabuna&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe> 
+                        <a href="https://mcpenation.com/">https://mcpenation.com</a>
+                    </div>
+                        <style>.mapouter{position:relative;text-align:center;width:100%;height:400px;}.gmap_canvas {overflow:hidden;background:none!important;width:100%;height:400px;}.gmap_iframe {width:100%!important;height:400px!important;}</style>
                 </div>
-                <hr class="my-2">
-                <p class="lead fs-3">Escolha seu destino faça seu orçamento e deixe com agente.</p>
+            <hr class="my-2">
+            <p class="lead fs-3">Escolha seu destino faça seu orçamento e deixe com agente.</p>
         </div>
-        <h1 class="display-3">Serivços</h1>
+        <h1 class="display-3">
+            <i class="fa-solid fa-screwdriver-wrench"></i>
+            Serivços
+        </h1>
         <p class="lead">
             Nossa frota conta com os serviços de turismo, passeios, translados,
             empresa, conveções, tranporte de colaboradores, faça já seu orcamento!
-        </p>
-            <hr class="my-2">            
-        <p class="lead">
-            <a class="btn btn-primary btn-lg" href="Jumbo action link" role="button">Solicitar Agora!</a>
-        </p>
+        </p> 
+        <hr class="my-2">
+        <div class="container">
+            <form class="row g-3 needs-validation" novalidate>                               
+                <div class="col-md-6 pt-3 position-relative">
+                    <div class="col-12 d-flex justify-content-start">
+                        <h5>Origem</h5>
+                    </div> 
+                        <select class="form-select" id="estado" onchange="buscaCidadesOrigem(this.value)" required>
+                    <option selected disabled value="">Selecionar estado...</option>
+                    <option value="AC">Acre</option>
+                    <option value="AL">Alagoas</option>
+                    <option value="AM">Amazonas</option>
+                    <option value="AP">Amapá</option>
+                    <option value="BA">Bahia</option>
+                    <option value="CE">Ceará</option>
+                    <option value="DF">Distrito Federal</option>
+                    <option value="ES">Espírito Santo</option>
+                    <option value="GO">Goiás</option>
+                    <option value="MA">Maranhão</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="MS">Mato Grosso do Sul</option>
+                    <option value="MT">Mato Grosso</option>
+                    <option value="PA">Pará</option>
+                    <option value="PB">Paraíba</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="PI">Piauí</option>
+                    <option value="PR">Paraná</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                    <option value="RO">Rondônia</option>
+                    <option value="RR">Roraima</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                    <option value="SC">Santa Catarina</option>
+                    <option value="SE">Sergipe</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="TO">Tocantins</option>                    
+                        </select>  
+                    <div class="col-md-12 pt-2 position-relative">
+                        <select class="form-select" id="cidadeOrigem" required>
+                          <option selected disabled value="">Selecione primeiro um estado...</option>                     
+                        </select>                 
+                    </div>  
+                    <div class="invalid-feedback">
+                        Voçe precisa informar o local de partida.
+                    </div>               
+                </div>
+                                
+                <div class="col-md-6 pt-3 position-relative">
+                    <div class="col-12 d-flex justify-content-start">
+                        <h5>Destino</h5>
+                    </div>
+                        <select class="form-select" id="estado" onchange="buscaCidadesDestino(this.value)" required>
+                    <option selected disabled value="">Selecionar estado...</option>
+                    <option value="AC">Acre</option>
+                    <option value="AL">Alagoas</option>
+                    <option value="AM">Amazonas</option>
+                    <option value="AP">Amapá</option>
+                    <option value="BA">Bahia</option>
+                    <option value="CE">Ceará</option>
+                    <option value="DF">Distrito Federal</option>
+                    <option value="ES">Espírito Santo</option>
+                    <option value="GO">Goiás</option>
+                    <option value="MA">Maranhão</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="MS">Mato Grosso do Sul</option>
+                    <option value="MT">Mato Grosso</option>
+                    <option value="PA">Pará</option>
+                    <option value="PB">Paraíba</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="PI">Piauí</option>
+                    <option value="PR">Paraná</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                    <option value="RO">Rondônia</option>
+                    <option value="RR">Roraima</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                    <option value="SC">Santa Catarina</option>
+                    <option value="SE">Sergipe</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="TO">Tocantins</option>
+                        </select> 
+                    <div class="col-md-12 pt-2 position-relative">
+                        <select class="form-select" id="cidadeDestino" required>
+                          <option selected disabled value="">Selecione primeiro um estado...</option>                     
+                        </select>                 
+                    </div>
+                    <div class="invalid-feedback">
+                        Voçe precisa informar o local de destino.
+                    </div>  
+                </div>    
+                <div class="col-md-4 position-relative">
+                    <div class="col-12 d-flex justify-content-start">
+                        <h5>Ida</h5>
+                    </div>                    
+                    <input type="date" class="form-control" value="" required> 
+                    <div class="invalid-feedback">
+                        Voçe precisa informar uma data de ida.
+                    </div>                  
+                </div>
+                <div class="col-md-4 position-relative">
+                    <div class="col-12 d-flex justify-content-start">
+                        <h5>Volta</h5>
+                    </div>                    
+                    <input type="date" class="form-control" value="" required>
+                    <div class="invalid-feedback">
+                        Voçe precisa informar uma data de retorno.
+                    </div>
+                </div>
+                <div class="col-md-4 position-relative">
+                    <div class="col-12 d-flex justify-content-start">
+                        <h5>Viajentes</h5>
+                    </div>                    
+                    <input type="number" min="1" max="20" class="form-control" value="" placeholder="1-20" required>
+                    <div class="invalid-feedback">
+                        Este campo só aceita entre 1 e 20 viajantes.
+                    </div>
+                </div>
+                
+                <div class="col-md-12 pt-3 position-relative">
+                    <div class="d-flex justify-content-start">
+                        <h5>Observações</h5>
+                    </div>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                  </div>  
+                  <div class="col-md-12">
+                    <button class="w-100 btn btn-lg btn-success" type="submit">Solicitar Orçamento!</button>
+                  </div>                                                                     
+              </form>
+        </div>                                             
     </div>
+    
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" 
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" 
     crossorigin="anonymous"></script>
+    <script src="/js/site.js"></script>
+    <script src="/js/cidades.js"></script>
+    <script src="/fontawesome/js/all.min.js"></script>
 </body>
 </html>
