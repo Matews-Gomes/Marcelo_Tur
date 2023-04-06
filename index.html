@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="./css/theme.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" 
-    rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" 
-    crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" />
+    <link rel="stylesheet" href="./css/theme.css">      
     <link rel="stylesheet" href="/fontawesome/css/all.min.css">
     <title>MarceloTur - Home</title>
 </head>
@@ -16,11 +16,11 @@
         <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container-fluid">
                 <main>
-                    <div class="logo-redes container-fluid">
+                    <div class="logo-redes container">
                         <div class="logo">
                             <img src="./img/logo.png" alt="logo">
                         </div>
-                        <div class="rede-sociais navbar-brand">
+                        <div class="rede-sociais d-none d-sm-block">
                             <ul>
                                 <li><a href="#"><img src="./img/whatsapp.png"></a></li>                        
                                 <li><a href="#"><img src="./img/facebook.png"></a></li>
@@ -32,15 +32,14 @@
                 </main>          
             </div>
         </nav>        
-    </header>
-    <header class="menu-itens">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container">
-                    <button class="navbar-toggler" type="button" 
-                        data-bs-toggle="collapse" data-bs-target="#navbarContent" 
-                        aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
+    </header>    
+    <header class="menu-itens">        
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <button class="navbar-toggler mx-4" type="button" 
+                    data-bs-toggle="collapse" data-bs-target="#navbarContent" 
+                    aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
                 <div class="collapse navbar-collapse menu" id="navbarContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item"><a href="index.html">Home</a></li>
@@ -49,8 +48,7 @@
                         <li class="nav-item"><a href="#">Contato</a></li>
                     </ul>                    
                 </div>
-            </div>
-        </nav>
+            </nav>
     </header>
     <div class="jumbotron jumbotron-fluid pt-3 mt-3 text-center bg-light">
         <div class="container">
@@ -116,19 +114,37 @@
                         <a href="https://mcpenation.com/">https://mcpenation.com</a>
                     </div>
                         <style>.mapouter{position:relative;text-align:center;width:100%;height:400px;}.gmap_canvas {overflow:hidden;background:none!important;width:100%;height:400px;}.gmap_iframe {width:100%!important;height:400px!important;}</style>
+                </div>            
+            <hr class="my-2">
+            <h1 class="display-3 mt-4">
+                <i class="fa-solid fa-screwdriver-wrench"></i>
+                Serivços
+            </h1>
+            <p class="lead">
+                Nossa frota conta com carros novos e modernos com garantia de  
+                segurança e conforto durante o sua viagem, ofereçemos 
+                os serviços de turismo, passeios, translados,
+                conveções, tranporte de colaboradores... Tudo para sua maior comodidade!
+            </p> 
+            <hr class="my-2">            
+            <div class="container">
+                <div class="glider-contain">
+                    <div class="glider image-link" id="galeria"></div>                                    
+                    <div role="tablist" class="dots"></div>
                 </div>
+            </div>
             <hr class="my-2">
             <p class="lead fs-3">Escolha seu destino faça seu orçamento e deixe com agente.</p>
+            <h1 class="display-3">
+                <i class="fa-solid fa-route"></i>
+                Viagens
+            </h1>
+            <p class="lead">
+               Escolha sua rota, reúna sua galera e sinta-se a vontade para curtir a sua viagem com conforto e segurança!
+            </p>            
+            <hr class="my-2">   
         </div>
-        <h1 class="display-3">
-            <i class="fa-solid fa-screwdriver-wrench"></i>
-            Serivços
-        </h1>
-        <p class="lead">
-            Nossa frota conta com os serviços de turismo, passeios, translados,
-            empresa, conveções, tranporte de colaboradores, faça já seu orcamento!
-        </p> 
-        <hr class="my-2">
+        <!--Foumulario de envio de orçamento-->
         <div class="container">
             <form class="row g-3 needs-validation" novalidate>                               
                 <div class="col-md-6 pt-3 position-relative">
@@ -242,7 +258,7 @@
                     </div>                    
                     <input type="number" min="1" max="20" class="form-control" value="" placeholder="1-20" required>
                     <div class="invalid-feedback">
-                        Este campo só aceita entre 1 e 20 viajantes.
+                        Este campo aceita até 20 viajantes.
                     </div>
                 </div>
                 
@@ -253,16 +269,23 @@
                     <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                   </div>  
                   <div class="col-md-12">
-                    <button class="w-100 btn btn-lg btn-success" type="submit">Solicitar Orçamento!</button>
+                    <button class="w-100 btn btn-lg btn-primary" type="submit">Solicitar Orçamento!</button>
                   </div>                                                                     
               </form>
         </div>                                             
     </div>
     
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" 
-    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" 
-    crossorigin="anonymous"></script>
+    <footer class="text-muted py-5">
+        <div class="container">
+            <p class="mb-1 text-center">Desenvolvido por Matews-Gomes <br />&copy; Todos os direitos reservados</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+    <script src="/js/magnific.js"></script>  
+    <script src="/js//glider.min.js"></script>  
     <script src="/js/site.js"></script>
     <script src="/js/cidades.js"></script>
     <script src="/fontawesome/js/all.min.js"></script>

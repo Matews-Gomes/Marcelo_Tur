@@ -40,7 +40,7 @@ main{
 }
 
 .rede-sociais{
-    width: 90%;
+    width: 100%;
 }
 
 .menu-itens{
@@ -52,6 +52,7 @@ main{
 .menu{
     width: 85%;
 }
+
 .menu ul li{
     display: inline-block;
     margin-left: 20px;
@@ -85,15 +86,9 @@ main{
     margin: 0 auto; 
 }
 
-.card-frota{
-    width: 50rem;
-}
-
-.card-frota img{
-    height: 400px;
-    width: 20rem;
-}
-
-.container {
-    max-width: 960px;
+img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
   }
+  
