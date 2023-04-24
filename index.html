@@ -9,7 +9,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" />
     <link rel="stylesheet" href="./css/theme.css">      
     <link rel="stylesheet" href="/fontawesome/css/all.min.css">
-    <title>MarceloTur - Home</title>
+    <link rel="shortcut icon" href="/img/favicon" type="image/x-icon">
+    <title>MarceloTur</title>
 </head>
 <body>
     <header class="menu-principal">
@@ -22,10 +23,10 @@
                         </div>
                         <div class="rede-sociais d-none d-sm-block">
                             <ul>
-                                <li><a href="#"><img src="./img/whatsapp.png"></a></li>                        
-                                <li><a href="#"><img src="./img/facebook.png"></a></li>
-                                <li><a href="#"><img src="./img/instagram.png"></a></li>
-                                <li><a href="#"><img src="./img/email.png"></a></li>
+                                <li><a href="https://api.whatsapp.com/send?phone=+5573988032593" target="_blank"><img src="./img/whatsapp.png"></a></li>                        
+                                <li><a href="https://www.facebook.com/people/M-J-De-Souza-Transportes-Itabuna/100070446699465/" target="_blank"><img src="./img/facebook.png"></a></li>
+                                <li><a href="https://www.instagram.com/marcelotur.transportes" target="_blank"><img src="./img/instagram.png"></a></li>
+                                <li><a href="mailto:marcelovansturismo@gmail.com" target="_blank"><img src="./img/email.png"></a></li>
                             </ul>
                         </div>
                     </div>
@@ -43,9 +44,9 @@
                 <div class="collapse navbar-collapse menu" id="navbarContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item"><a href="index.html">Home</a></li>
-                        <li class="nav-item"><a href="#">Viagens</a></li>
-                        <li class="nav-item"><a href="#">Serviços</a></li>
-                        <li class="nav-item"><a href="#">Contato</a></li>
+                        <li class="nav-item"><a href="#servicos">Serviços</a></li>
+                        <li class="nav-item"><a href="#viagens">Viagens</a></li>
+                        <li class="nav-item"><a href="#contato">Contato</a></li>
                     </ul>                    
                 </div>
             </nav>
@@ -110,48 +111,70 @@
                 <div class="mapouter mapa">
                     <div class="gmap_canvas embed-responsive embed-responsive-16by9">
                         <iframe class="gmap_iframe embed-responsive-item" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" 
-                        src="https://maps.google.com/maps?width=1000&amp;height=400&amp;hl=en&amp;q=itabuna&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe> 
+                            src="https://maps.google.com/maps?width=1000&amp;height=400&amp;hl=en&amp;q=itabuna&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
+                        </iframe> 
                         <a href="https://mcpenation.com/">https://mcpenation.com</a>
                     </div>
-                        <style>.mapouter{position:relative;text-align:center;width:100%;height:400px;}.gmap_canvas {overflow:hidden;background:none!important;width:100%;height:400px;}.gmap_iframe {width:100%!important;height:400px!important;}</style>
                 </div>            
             <hr class="my-2">
-            <h1 class="display-3 mt-4">
+            <h1 class="display-3 mt-4" id="servicos">
                 <i class="fa-solid fa-screwdriver-wrench"></i>
                 Serivços
             </h1>
-            <p class="lead">
-                Nossa frota conta com carros novos e modernos com garantia de  
+            <p class="lead fs-4">
+                Nossa frota conta com carros novos e modernos, garantia de  
                 segurança e conforto durante o sua viagem, ofereçemos 
                 os serviços de turismo, passeios, translados,
-                conveções, tranporte de colaboradores... Tudo para sua maior comodidade!
+                conveções, tranporte de colaboradores...
             </p> 
-            <hr class="my-2">            
+            <hr class="my-2"> 
+            <!---------imagens da nossa frota----------->           
             <div class="container">
                 <div class="glider-contain">
                     <div class="glider image-link" id="galeria"></div>                                    
                     <div role="tablist" class="dots"></div>
                 </div>
             </div>
-            <hr class="my-2">
-            <p class="lead fs-3">Escolha seu destino faça seu orçamento e deixe com agente.</p>
-            <h1 class="display-3">
+            <!----------------------------------------->
+            <hr class="my-2" id="viagens">
+            <p class="lead fs-3">Escolha seu destino e faça seu orçamento com rapidez e comodidade.</p>            
+            <h1 class="display-3 mt-4 ">
                 <i class="fa-solid fa-route"></i>
                 Viagens
             </h1>
-            <p class="lead">
+            <p class="lead fs-4">
                Escolha sua rota, reúna sua galera e sinta-se a vontade para curtir a sua viagem com conforto e segurança!
             </p>            
-            <hr class="my-2">   
-        </div>
+            <hr class="mt-2" id="galery"> 
+            <!-----Galeria de fotos viagens------>
+            <div class="row image-link"></div>
+            <hr class="my-0">
+            <p class="lead fs-5">
+                Nossos clientes 100% satisfeitos qualidade e eficiênçia te levando ao seu destino garantindo sua tranquilidade!
+            </p>
+            <div class="justify-content-center pagination"></div>                         
+            <!------------------------------------>              
+        </div>  
+        <hr class="container my-2"  id="contato">       
         <!--Foumulario de envio de orçamento-->
-        <div class="container">
-            <form class="row g-3 needs-validation" novalidate>                               
+        <div class="container">            
+            <h1 class="display-3 mt-4">
+                <i class="fa-solid fa-envelope"></i>
+                Contato
+            </h1>
+            <form id="myForm" class="row g-3 needs-validation" action="https://formsubmit.co/tetasgomes.mg@gmail.com" method="POST" novalidate >  
+                <input type="hidden" name="_next" value="http://127.0.0.1:5500/orcamento.html">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_subject" value="Atenção você tem uma nova solicitação de orçamento!" >
+                <input type="hidden" name="_autoresponse" value="Recebemos a sua mensagem em breve entraremos em contato com o seu orçamento!">                              
                 <div class="col-md-6 pt-3 position-relative">
                     <div class="col-12 d-flex justify-content-start">
-                        <h5>Origem</h5>
+                        <h5>
+                            <i class="fa-solid fa-location-dot"></i>
+                            Origem
+                        </h5>
                     </div> 
-                        <select class="form-select" id="estado" onchange="buscaCidadesOrigem(this.value)" required>
+                    <select class="form-select" id="estado" name="estado-origem" onchange="buscaCidadesOrigem(this.value)" required>
                     <option selected disabled value="">Selecionar estado...</option>
                     <option value="AC">Acre</option>
                     <option value="AL">Alagoas</option>
@@ -182,20 +205,22 @@
                     <option value="TO">Tocantins</option>                    
                         </select>  
                     <div class="col-md-12 pt-2 position-relative">
-                        <select class="form-select" id="cidadeOrigem" required>
+                        <select class="form-select" id="cidadeOrigem" name="cidade-origem" required>
                           <option selected disabled value="">Selecione primeiro um estado...</option>                     
                         </select>                 
                     </div>  
                     <div class="invalid-feedback">
                         Voçe precisa informar o local de partida.
                     </div>               
-                </div>
-                                
+                </div>                                
                 <div class="col-md-6 pt-3 position-relative">
                     <div class="col-12 d-flex justify-content-start">
-                        <h5>Destino</h5>
+                        <h5>
+                            <i class="fa-solid fa-location-dot"></i>
+                            Destino
+                        </h5>
                     </div>
-                        <select class="form-select" id="estado" onchange="buscaCidadesDestino(this.value)" required>
+                        <select class="form-select" id="estado" name="estado-destino" onchange="buscaCidadesDestino(this.value)" required>
                     <option selected disabled value="">Selecionar estado...</option>
                     <option value="AC">Acre</option>
                     <option value="AL">Alagoas</option>
@@ -226,7 +251,7 @@
                     <option value="TO">Tocantins</option>
                         </select> 
                     <div class="col-md-12 pt-2 position-relative">
-                        <select class="form-select" id="cidadeDestino" required>
+                        <select class="form-select" id="cidadeDestino" name="cidade-destino" required>
                           <option selected disabled value="">Selecione primeiro um estado...</option>                     
                         </select>                 
                     </div>
@@ -236,48 +261,107 @@
                 </div>    
                 <div class="col-md-4 position-relative">
                     <div class="col-12 d-flex justify-content-start">
-                        <h5>Ida</h5>
+                        <h5>
+                            <i class="fa-solid fa-plane-departure"></i>
+                            Ida
+                        </h5>
                     </div>                    
-                    <input type="date" class="form-control" value="" required> 
+                    <input type="date" name="data-ida" class="form-control" value="" required> 
                     <div class="invalid-feedback">
                         Voçe precisa informar uma data de ida.
                     </div>                  
                 </div>
                 <div class="col-md-4 position-relative">
                     <div class="col-12 d-flex justify-content-start">
-                        <h5>Volta</h5>
+                        <h5>
+                            <i class="fa-solid fa-plane-arrival"></i>
+                            Volta
+                        </h5>
                     </div>                    
-                    <input type="date" class="form-control" value="" required>
+                    <input type="date" name="data-retorno" class="form-control" value="" required>
                     <div class="invalid-feedback">
                         Voçe precisa informar uma data de retorno.
                     </div>
                 </div>
                 <div class="col-md-4 position-relative">
                     <div class="col-12 d-flex justify-content-start">
-                        <h5>Viajentes</h5>
+                        <h5>
+                            <i class="fa-solid fa-people-group"></i>
+                            Viajentes
+                        </h5>
                     </div>                    
-                    <input type="number" min="1" max="20" class="form-control" value="" placeholder="1-20" required>
+                    <input type="number" name="passageiros" min="1" max="25" class="form-control" value="" placeholder="1-25" required>
                     <div class="invalid-feedback">
-                        Este campo aceita até 20 viajantes.
+                        Este campo aceita até 25 viajantes.
+                    </div>
+                </div>  
+                <div class="col-md-4 position-relative">
+                    <div class="col-12 d-flex justify-content-start">
+                        <h5>
+                            <i class="fa-solid fa-file-signature"></i>
+                            Nome
+                        </h5>
+                    </div>                    
+                    <input type="text" name="nome" class="form-control" placeholder="Nome do solicitante" required>
+                    <div class="invalid-feedback">
+                        Este campo é obrigatório informe seu nome completo.
                     </div>
                 </div>
-                
+                <div class="col-md-4 position-relative">
+                    <div class="col-12 d-flex justify-content-start">
+                        <h5>
+                            <i class="fa-solid fa-envelopes-bulk"></i>
+                            Email
+                        </h5>
+                    </div>                    
+                    <input type="email" name="email" class="form-control" placeholder="email@example.com" required>
+                    <div class="invalid-feedback">
+                        Este campo é obrigatório informe seu email para contato.
+                    </div>
+                </div>
+                <div class="col-md-4 position-relative">
+                    <div class="col-12 d-flex justify-content-start">
+                        <h5>
+                            <i class="fa-solid fa-mobile"></i>
+                            Telefone
+                        </h5>
+                    </div>                    
+                    <input type="text"class="form-control" name="telefone" placeholder="Nº telefone..." required>
+                    <div class="invalid-feedback">
+                        Este campo é obrigatório informe seu telefone para contato.
+                    </div>
+                </div>                
                 <div class="col-md-12 pt-3 position-relative">
                     <div class="d-flex justify-content-start">
-                        <h5>Observações</h5>
+                        <h5>
+                            <i class="fa-solid fa-note-sticky"></i>
+                            Observações
+                        </h5>
                     </div>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                  </div>  
-                  <div class="col-md-12">
+                    <textarea class="form-control" name="message" rows="3" placeholder="Observações..." required></textarea>
+                    <div class="invalid-feedback">
+                        Este campo é obrigatório voçe deve enviar uma mensagem de contato...
+                    </div>                   
+                  <div class="col-md-12 my-3">
                     <button class="w-100 btn btn-lg btn-primary" type="submit">Solicitar Orçamento!</button>
-                  </div>                                                                     
-              </form>
+                  </div>
+                </div>                                                                     
+            </form>
         </div>                                             
     </div>
     
+    <div id="loading" class="d-none position-fixed top-0 start-0 w-100 h-100 bg-light opacity-75">
+        <div class="d-flex justify-content-center align-items-center h-100">
+          <div class="spinner-border text-primary" role="status">
+            <span class="visually-hidden">Carregando...</span>
+          </div>
+        </div>
+    </div>
+    
+      
     <footer class="text-muted py-5">
         <div class="container">
-            <p class="mb-1 text-center">Desenvolvido por Matews-Gomes <br />&copy; Todos os direitos reservados</p>
+            <p class="mb-1 text-center text-dark">Desenvolvido por Matews-Gomes <br />&copy; <span id="currentYear"></span> Todos os direitos reservados</p>
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
@@ -289,5 +373,30 @@
     <script src="/js/site.js"></script>
     <script src="/js/cidades.js"></script>
     <script src="/fontawesome/js/all.min.js"></script>
+
+    <script>
+        var currentYear = new Date().getFullYear();
+        document.getElementById("currentYear").innerHTML = currentYear;
+
+        document.getElementById("myForm").addEventListener("submit", function(event) {
+        var inputs = this.querySelectorAll("input, textarea");
+        var allFilled = true;
+        for (var i = 0; i < inputs.length; i++) {
+            if (!inputs[i].value) {
+                allFilled = false;
+                break;
+            }
+        }
+        if (!allFilled) {
+            event.preventDefault();           
+            return false;
+        }
+        mostrarCarregando();
+    });
+
+    function mostrarCarregando() {
+    document.getElementById("loading").classList.remove("d-none");
+    }
+    </script>
 </body>
 </html>

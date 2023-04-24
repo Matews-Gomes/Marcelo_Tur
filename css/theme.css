@@ -29,7 +29,7 @@ main{
 }
 
 .rede-sociais img{
-    height: 50px;
+    height: 55px;
     padding-top: 0.9rem;
     margin-top: 0.9rem;
 }
@@ -91,4 +91,22 @@ img {
     height: auto;
     object-fit: cover;
   }
-  
+
+
+  .mapouter{
+    position:relative;
+    text-align:center;
+    width:100%;
+    height:400px;
+}
+                    
+.gmap_canvas {
+    overflow:hidden;
+    background:none!important;
+    width:100%;height:400px;
+}
+                    
+.gmap_iframe {
+    width:100%!important;
+    height:400px!important;
+}
