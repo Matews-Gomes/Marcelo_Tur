@@ -28,12 +28,6 @@ main{
     height: 90px;
 }
 
-.rede-sociais img{
-    height: 55px;
-    padding-top: 0.9rem;
-    margin-top: 0.9rem;
-}
-
 .rede-sociais ul li {
     display: inline-block;
     list-style: none;
