@@ -14,14 +14,14 @@
 </head>
 <body>
     <header class="menu-principal">
-        <nav class="navbar navbar-expand-lg navbar-light">
-            <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container-fluid d-flex justify-content-between align-items-center">
                 <main>
                     <div class="logo-redes container">
                         <div class="logo">
                             <img src="./img/logo.png" alt="logo">
                         </div>
-                        <div class="rede-sociais d-none d-sm-block py-4">
+                        <div class="rede-sociais d-none d-sm-block py-4 justify-content-end">
                             <ul>
                                 <li><a class="text-decoration-none" href="https://api.whatsapp.com/send?phone=557388368407" target="_blank"><i class="fa-brands fa-whatsapp fs-3 text-dark"></i></a></li>                        
                                 <li><a href="https://www.facebook.com/people/M-J-De-Souza-Transportes-Itabuna/100070446699465/" target="_blank"><i class="fa-brands fa-facebook fs-3 text-dark mx-2"></i></a></li>
@@ -33,9 +33,9 @@
                 </main>          
             </div>
         </nav>        
-    </header>    
+    </header>
     <header class="menu-itens">        
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <nav class="navbar navbar-expand-lg navbar-dark">
                 <button class="navbar-toggler mx-4" type="button" 
                     data-bs-toggle="collapse" data-bs-target="#navbarContent" 
                     aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -51,7 +51,8 @@
                 </div>
             </nav>
     </header>
-    <div class="jumbotron jumbotron-fluid pt-3 mt-3 text-center bg-light">
+
+    <div class="jumbotron jumbotron-fluid mt-5 text-center bg-light">
         <div class="container">
             <p class="lead fs-1">Marcelo turismo transportando com conforto e segurança.</p>
             <hr class="my-2">
@@ -143,7 +144,7 @@
                 Viagens
             </h1>
             <p class="lead fs-4">
-               Escolha sua rota, reúna sua galera e sinta-se a vontade para curtir a sua viagem com conforto e segurança!
+                Escolha sua rota, reúna sua galera e sinta-se a vontade para curtir a sua viagem com conforto e segurança!
             </p>            
             <hr class="mt-2" id="galery"> 
             <!-----Galeria de fotos viagens------>
@@ -162,7 +163,7 @@
                 <i class="fa-solid fa-envelope"></i>
                 Contato
             </h1>
-            <form id="myForm" class="row g-3 needs-validation" action="https://formsubmit.co/tetasgomes.mg@gmail.com" method="POST" novalidate >  
+            <form id="myForm" class="row g-3 needs-validation" action="https://formsubmit.co/marcelovansturismo@gmail.com" method="POST" novalidate >  
                 <input type="hidden" name="_next" value="https://marcelovansturismo.netlify.app/orcamento.html">
                 <input type="hidden" name="_captcha" value="false">
                 <input type="hidden" name="_subject" value="Atenção você tem uma nova solicitação de orçamento!" >
@@ -206,7 +207,7 @@
                         </select>  
                     <div class="col-md-12 pt-2 position-relative">
                         <select class="form-select" id="cidadeOrigem" name="cidade-origem" required>
-                          <option selected disabled value="">Selecione primeiro um estado...</option>                     
+                            <option selected disabled value="">Selecione primeiro um estado...</option>                     
                         </select>                 
                     </div>  
                     <div class="invalid-feedback">
@@ -252,7 +253,7 @@
                         </select> 
                     <div class="col-md-12 pt-2 position-relative">
                         <select class="form-select" id="cidadeDestino" name="cidade-destino" required>
-                          <option selected disabled value="">Selecione primeiro um estado...</option>                     
+                            <option selected disabled value="">Selecione primeiro um estado...</option>                     
                         </select>                 
                     </div>
                     <div class="invalid-feedback">
@@ -287,7 +288,7 @@
                     <div class="col-12 d-flex justify-content-start">
                         <h5>
                             <i class="fa-solid fa-people-group"></i>
-                            Viajentes
+                            Viajantes
                         </h5>
                     </div>                    
                     <input type="number" name="passageiros" min="1" max="25" class="form-control" value="" placeholder="1-25" required>
@@ -342,9 +343,9 @@
                     <div class="invalid-feedback">
                         Este campo é obrigatório voçe deve enviar uma mensagem de contato...
                     </div>                   
-                  <div class="col-md-12 my-4">
-                    <button class="w-100 btn btn-lg btn-primary" type="submit">Solicitar Orçamento!</button>
-                  </div>
+                    <div class="col-md-12 my-4">
+                        <button class="w-100 btn btn-lg btn-primary" type="submit">Solicitar Orçamento!</button>
+                    </div>
                 </div>                                                                     
             </form>
         </div>                                             
@@ -352,18 +353,18 @@
     
     <div id="loading" class="d-none position-fixed top-0 start-0 w-100 h-100 bg-light opacity-75">
         <div class="d-flex justify-content-center align-items-center h-100">
-          <div class="spinner-border text-primary" role="status">
-            <span class="visually-hidden">Carregando...</span>
-          </div>
+            <div class="spinner-border text-primary" role="status">
+                <span class="visually-hidden">Carregando...</span>
+            </div>
         </div>
     </div>
-         
+
     <footer class="text-muted py-5">
         <div class="container">
             <hr class="my-2">
                 <p class="text-center text-dark mt-4">Rua Potamiano, 330 - São Caetano Itabuna, Bahia</p>
                 <div class="text-center">
-                    <div class="rede-sociais">
+                    <div class="rede-sociais-footer text-center">
                         <ul>
                             <li><a class="text-decoration-none" href="https://api.whatsapp.com/send?phone=557388368407" target="_blank"><i class="fa-brands fa-whatsapp fs-2 text-dark"></i></a></li>                        
                             <li><a href="https://www.facebook.com/people/M-J-De-Souza-Transportes-Itabuna/100070446699465/" target="_blank"><i class="fa-brands fa-facebook fs-2 text-dark mx-2"></i></a></li>
@@ -371,11 +372,12 @@
                             <li><a href="mailto:marcelovansturismo@gmail.com" target="_blank"><i class="fa-regular fa-envelope fs-2 text-dark mx-2"></i></a></li>
                         </ul>
                     </div>
-                 </div>
+                </div>
             </div>
             <p class="mb-1 text-center text-dark">Desenvolvido por Matews-Gomes <br />&copy; <span id="currentYear"></span> Todos os direitos reservados</p>
         </div>
     </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> 
@@ -389,7 +391,6 @@
     <script>
         var currentYear = new Date().getFullYear();
         document.getElementById("currentYear").innerHTML = currentYear;
-
         document.getElementById("myForm").addEventListener("submit", function(event) {
         var inputs = this.querySelectorAll("input, textarea");
         var allFilled = true;
