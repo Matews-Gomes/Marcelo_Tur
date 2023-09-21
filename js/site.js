@@ -93,7 +93,6 @@
     {src: "/img/frota 01.jpg", alt: "imagem", width:"100%", height: "300"},
     {src: "/img/frota 02.jpg", alt: "imagem", width:"100%", height: "300"},
     {src: "/img/frota 03.jpg", alt: "imagem", width:"100%", height: "300"},
-    {src: "/img/frota 04.jpg", alt: "imagem", width:"100%", height: "300"},
     {src: "/img/IMG-20230405-WA0006.jpg", alt: "imagem", width:"100%", height: "300"},   
     {src: "/img/IMG-20230405-WA0002.jpg", alt: "imagem", width:"100%", height: "300"},   
     {src: "/img/IMG-20230405-WA0038.jpg", alt: "imagem", width:"100%", height: "300"},
