@@ -90,6 +90,10 @@
   }  
 
   var imagens = [ 
+    {src: "/img/frota 01.jpg", alt: "imagem", width:"100%", height: "300"},
+    {src: "/img/frota 02.jpg", alt: "imagem", width:"100%", height: "300"},
+    {src: "/img/frota 03.jpg", alt: "imagem", width:"100%", height: "300"},
+    {src: "/img/frota 04.jpg", alt: "imagem", width:"100%", height: "300"},
     {src: "/img/IMG-20230405-WA0006.jpg", alt: "imagem", width:"100%", height: "300"},   
     {src: "/img/IMG-20230405-WA0002.jpg", alt: "imagem", width:"100%", height: "300"},   
     {src: "/img/IMG-20230405-WA0038.jpg", alt: "imagem", width:"100%", height: "300"},
@@ -111,6 +115,19 @@
   //Imgens das viagens
   document.addEventListener("DOMContentLoaded", function() {
     const images = [
+      {src: "/img/viagens 01.jpg", alt: "fotos"},
+      {src: "/img/viagens 02.jpg", alt: "fotos"},
+      {src: "/img/viagens 03.jpg", alt: "fotos"},
+      {src: "/img/viagens 04.jpg", alt: "fotos"},
+      {src: "/img/viagens 05.jpg", alt: "fotos"},
+      {src: "/img/viagens 09.jpg", alt: "fotos"},
+      {src: "/img/viagens 06.jpg", alt: "fotos"},
+      {src: "/img/viagens 07.jpg", alt: "fotos"},
+      {src: "/img/viagens 08.jpg", alt: "fotos"},
+      {src: "/img/viagens 10.jpg", alt: "fotos"},
+      {src: "/img/viagens 12.jpg", alt: "fotos"},
+      {src: "/img/viagens 13.jpg", alt: "fotos"},
+      {src: "/img/viagens 11.jpg", alt: "fotos"},
       {src: "/img/IMG-20230405-WA0058.jpg", alt: "fotos"},
       {src: "/img/IMG-20230405-WA0059.jpg", alt: "fotos"},
       {src: "/img/IMG-20230405-WA0060.jpg", alt: "fotos"},
